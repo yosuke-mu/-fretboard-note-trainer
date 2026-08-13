@@ -1,4 +1,4 @@
-const NOTES=["C","C♯","D","D♯","E","F","F♯","G","G♯","A","A♯","B"],OPEN=[4,11,7,2,9,4];
+const NOTES=["C","C♯/Db","D","D♯/Eb","E","F","F♯/Gb","G","G♯/Ab","A","A♯/Bb","B"],OPEN=[4,11,7,2,9,4];
 document.head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" href="fretboard.css">');
 let state={screen:"setup",strings:[1,2,3,4,5,6],from:1,to:12,count:20,deck:[],index:0,correct:0,misses:[],locked:false};
 const noteAt=(s,f)=>NOTES[(OPEN[s-1]+f)%12];
