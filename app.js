@@ -1,6 +1,6 @@
 const NOTES=["C","C♯/Db","D","D♯/Eb","E","F","F♯/Gb","G","G♯/Ab","A","A♯/Bb","B"],OPEN=[4,11,7,2,9,4],NAMES=["E","B","G","D","A","E"];
 const INTS=["P1","m2/♭9","M2/9","m3","M3","P4/11","♭5/♯11","P5","m6/♭13","M6/13","m7","M7"];
-document.head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" href="fretboard.css"><link rel="stylesheet" href="modes.css">');
+document.head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" href="fretboard.css"><link rel="stylesheet" href="modes.css"><link rel="stylesheet" href="marker-fix.css">');
 let S={page:"home",mode:"name",strings:[1,2,3,4,5,6],from:1,to:12,count:10,notePool:[0,2,4,5,7,9,11],intPool:[3,4,7,10],deck:[],i:0,score:0,miss:[],picked:[],feedback:null,locked:false};
 const app=document.querySelector("#app"),note=(s,f)=>(OPEN[s-1]+f)%12,frets=()=>Array.from({length:S.to-S.from+1},(_,i)=>S.from+i),shuffle=a=>[...a].sort(()=>Math.random()-.5);
 const header=()=>'<header class="brand"><span>12</span><div><strong>Fretboard</strong><small>Trainer</small></div></header>';
