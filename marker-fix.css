@@ -2,3 +2,7 @@
 .position-marker {
   transform: translateX(34px);
 }
+
+.inactive-string {
+  opacity: 0.42;
+}
