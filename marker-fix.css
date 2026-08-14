@@ -1,8 +1,0 @@
-/* Account for the 34px string-label column in horizontal marker placement. */
-.position-marker {
-  transform: translateX(34px);
-}
-
-.inactive-string {
-  opacity: 0.42;
-}
